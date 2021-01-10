@@ -1,6 +1,6 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: lightblue;
+    background-color: #cececf;
 }
 
 main {
@@ -13,7 +13,7 @@ main {
 }
 
 header, footer {
-    background-color: white;
+    background-color: #000e7a;
     color: white;
     padding: .8em;
     text-align: center;
@@ -48,7 +48,7 @@ h1 {
     margin: 20px;
     margin-left: 150px;
     text-align: left;
-    color: white;
+    color: grey;
 }
 
 h2 {
@@ -60,11 +60,11 @@ hr {
     width: 150%;
 }
 a {
-    color: white
+    color: blue
 }
 a:hover {
-    color:white;
+    color:cornflowerblue;
 }
 #updated {
-    color: white;
+    color: grey;
 }
