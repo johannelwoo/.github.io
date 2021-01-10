@@ -48,7 +48,7 @@ h1 {
     margin: 20px;
     margin-left: 150px;
     text-align: left;
-    color: grey;
+    color: white;
 }
 
 h2 {
@@ -60,11 +60,11 @@ hr {
     width: 150%;
 }
 a {
-    color: blue
+    color: white
 }
 a:hover {
-    color:cornflowerblue;
+    color:white;
 }
 #updated {
-    color: grey;
+    color: white;
 }
