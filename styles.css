@@ -1,6 +1,6 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #cececf;
+    background-color: white;
 }
 
 main {
@@ -13,7 +13,7 @@ main {
 }
 
 header, footer {
-    background-color: #000e7a;
+    background-color: white;
     color: white;
     padding: .8em;
     text-align: center;
