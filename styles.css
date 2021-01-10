@@ -1,6 +1,6 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #cececf;
+    background-color: #d6d6da;
 }
 
 main {
@@ -13,7 +13,7 @@ main {
 }
 
 header, footer {
-    background-color: #000e7a;
+    background-color: #1a2aa5;
     color: white;
     padding: .8em;
     text-align: center;
@@ -33,8 +33,6 @@ header, footer {
     position: relative;
     top: -70px;
     box-shadow: 0 0 10px;
-    border-radius: 10px;
-
 }
 
 li {
@@ -48,7 +46,6 @@ h1 {
     margin: 20px;
     margin-left: 150px;
     text-align: left;
-    color: grey;
 }
 
 h2 {
@@ -60,10 +57,10 @@ hr {
     width: 150%;
 }
 a {
-    color: blue
+    color: #1a2aa5;
 }
 a:hover {
-    color:cornflowerblue;
+    color: #495eff;
 }
 #updated {
     color: grey;
