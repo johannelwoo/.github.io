@@ -104,3 +104,11 @@ footer {
     padding: 1rem 2%;
     background-color: #1a2aa5;
 }
+
+footer a{
+    color: white;
+}
+footer a:hover {
+    color: #1a2aa5;
+    background-color: white;
+}
