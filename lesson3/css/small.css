@@ -10,7 +10,7 @@ body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
 }
-h1, h2 { color: #1B72BF;}
+h1, h2 { color: #1B72BF; font-family: 'Roboto', sans-serif;}
 
 /*----------- HEADER --------------*/
 header {
@@ -34,7 +34,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: #333333;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -54,6 +54,7 @@ nav ul li.active a {
 main {
     padding: 0 2%;
     min-height: 10rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 main img {
     width: 100%;
@@ -73,7 +74,7 @@ main img {
 } 
 .typo-examples .left {
     background-color: #F2D377;
-    color: white;
+    color: #333333;
 }
 /*----------- FOOTER --------------*/
 footer {
