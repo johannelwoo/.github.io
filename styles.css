@@ -3,6 +3,9 @@ body {
     background-color: #d6d6da;
 }
 
+img{
+    margin-top: 60px;
+}
 main {
     margin: 5% auto;
     border-radius: 10px;
@@ -28,6 +31,7 @@ header, footer {
     margin-bottom: 8px;
 
 }
+
 
 .myPicture {
     position: relative;
