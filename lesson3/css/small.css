@@ -76,6 +76,13 @@ main img {
     background-color: #F2D377;
     color: #333333;
 }
+.typo-examples h1, h2{
+    font-family: Verdana, sans-serif;
+}
+.typo-examples p{
+    font-family: 'Roboto', sans-serif;
+}
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #F2D377;
