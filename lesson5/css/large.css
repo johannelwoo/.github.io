@@ -11,8 +11,23 @@
       }
 
   nav button {
+      display: none;   
+  }
+
+  .mainNav {
+        display: flex;
+        max-width: 960;
+        margin: 0 auto;
+  }
+  .mainNav li{
+    display: block;
+    flex: 1 1 auto;
+  }
+  .mainNav a {
+      text-align: center;
+  }
+  .ham {
       display: none;
-      
   }
   /*HEADER*/
   
@@ -43,4 +58,6 @@ main{
 .map {
     width: 100%;
 }
+
+
 } /* end of media query */

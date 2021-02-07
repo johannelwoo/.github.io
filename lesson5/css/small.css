@@ -33,7 +33,18 @@ header section {
     display: flex;
     flex-flow: column;
 }
+
 /*----------- NAVIGATION --------------*/
+.ham {
+    margin-top: 20px;
+    margin-left: 45px;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    border: none;
+  }
+
 nav{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
 background:  #f2b366; /* Old browsers */
@@ -80,11 +91,39 @@ nav ul li.active a {
 }
 
 nav ul.hide {display:none;}
+
 #active {
-    background-color: #000;
-    color: #fff
+    background-color: white;
+    color: #F2B366;
   }
-/* */
+
+.mainNav {
+	list-style: none;
+	padding: 0;
+}
+
+.mainNav li {
+	display: none;
+}
+
+.mainNav a {
+    display: block;
+    color: #333333;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.mainNav a:hover {
+	color: white;
+	background-color: #F2B366;
+}
+
+.responsive li {
+	display: block;
+}
+
 /*----------- MAIN --------------*/
 main {
     min-height: 10rem;
