@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<div class = "header-content">
+    <title>AcuWeather</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+</div>
+     
+</head>
+<body>
+    <div id="alert" style="display: none;">
+        <h3>"Saturday = Preston Pancakes in the Park!<br>
+        9:00 a.m. Saturday at the city park pavillion.</h3>
+    </div>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/weather-logo.png" alt="logo">
+ <h1>AcuWeather</h1>
+        <h2>Cloudy with a chance of accuracy.</h2>
+    <div id="nav-icon1" class="nav-icon1" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">☰</button>
+        <ul id="mainNav" class = "hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+                
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+        <section class="summary">
+            <h2>Preston, Idaho</h2>
+            <div class = "image-and-summary">
+                <img class="summary-image" src="images/preston-idaho.jpg" alt="hero image">
+                <section class ="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class = "stats"></div>
+                    <p>Temperature: &deg;F</p>
+                    <p>Wind Speed: mph</p>
+                    <p>Chance of snow: 0%</p>
+                    </div>
+            </section>
+            </div>
+        </section>
+        <div class="five-day">
+            <h2>Five Day Forecast</h2>
+            <table class="forcast">
+                <tbody>
+                    <tr>
+                        <th>Today</th>
+                        <th>Tomorrow</th>
+                        <th>In Two days</th>
+                        <th>In Three days</th>
+                        <th>In Four days</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/slightly-cloudy.png" alt="today">
+                            <br>
+                            High: 36&deg;F <br> Low: 19&deg;F
+                        </td>
+                        <td>
+                            <img src="images/slightly-cloudy.png" alt="tomorrow">
+                            <br>
+                            High: 36&deg;F <br> Low: 19&deg;F
+                        </td>
+                        <td>
+                            <img src="images/slightly-cloudy.png" alt="two-days">
+                            <br>
+                            High: 34&deg;F <br> Low: 16&deg;F
+                        </td>
+                        <td>
+                            <img src="images/slightly-cloudy.png" alt="three-days">
+                            <br>
+                            High: 25&deg;F <br> Low: 10&deg;F
+                        </td>
+                        <td>
+                            <img src="images/rainy.png" alt="four-days">
+                            <br>
+                            High: 23&deg;F <br> Low: 7&deg;F
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="article">
+            <h2>Article</h2>
+            <img src="images/preston-article-image.jpg" alt="img-article">
+            <p>Etiam venenatis risus sapien, at porttitor tellus tristique vitae. Sed vel condimentum sapien. Proin ac tincidunt mi, nec dictum nisi. Vestibulum facilisis leo ut justo congue tincidunt. Phasellus tellus sapien, efficitur sit amet ipsum vel, viverra tincidunt odio. Nulla id consequat odio. Sed vehicula elit tempor, laoreet sapien ut, ullamcorper odio. Donec a elit leo. Fusce vulputate, nisl in venenatis pretium, augue velit viverra sapien, ac interdum lectus nulla nec risus.</p>
+            <p>Etiam venenatis risus sapien, at porttitor tellus tristique vitae. Sed vel condimentum sapien. Proin ac tincidunt mi, nec dictum nisi. Vestibulum facilisis leo ut justo congue tincidunt. Phasellus tellus sapien, efficitur sit amet ipsum vel, viverra tincidunt odio. Nulla id consequat odio. Sed vehicula elit tempor, laoreet sapien ut, ullamcorper odio. Donec a elit leo. Fusce vulputate, nisl in venenatis pretium, augue velit viverra sapien, ac interdum lectus nulla nec risus.</p>
+            <p>Etiam venenatis risus sapien, at porttitor tellus tristique vitae. Sed vel condimentum sapien. Proin ac tincidunt mi, nec dictum nisi. Vestibulum facilisis leo ut justo congue tincidunt. Phasellus tellus sapien, efficitur sit amet ipsum vel, viverra tincidunt odio. Nulla id consequat odio. Sed vehicula elit tempor, laoreet sapien ut, ullamcorper odio. Donec a elit leo. Fusce vulputate, nisl in venenatis pretium, augue velit viverra sapien, ac interdum lectus nulla nec risus.</p>
+        </div>
+        
+        <h2>Contact info</h2>
+
+        <div class="contact-info">
+            <div class="contact">
+                <p>
+                <br>    
+                <b>Phone Number</b>
+                <br>
+                123-456-7890
+            </p>
+            <p>
+                <br>
+                <b>Email</b>
+                <br>
+                acuweather@gmail.com
+            </p>
+            <p>
+                <br>
+                <b>Address</b>
+                <br>
+                123 Potato Lane Preston, Idaho 83263
+            </p>
+
+            <a href = "http://www.facebook.com/" target = "_blank">
+                <img class = "social-media" src = "images/facebook.png" alt="Facebook">
+            </a>
+            <a href = "http://www.instagram.com/" target = "_blank">
+                <img class = "social-media" src = "images/instagram.jpg" alt="Instagram">
+            </a>
+            <a href = "http://twitter.com/" target = "_blank">
+                <img class = "social-media" src = "images/twitter.png" alt="Twitter">
+            </a>
+        
+            </div>
+            <div class="preston-map">
+        <img class="map" src="images/map.jpg" alt="map">
+            </div>
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+    &copy; 2021 | Johanna Schick | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    <div class="lastUpdate">Last Updated : </div>
+    <span id="update">Saturday, 6 February 2021</span>
+  </footer>
+  <script src="js/hamburger.js"></script>
+  <script src="js/hamburger.js"></script>
+</body>
+</html>
