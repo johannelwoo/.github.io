@@ -27,7 +27,7 @@
     }
   
     .contact {
-        grid-column: 0;
+        grid-column: 1;
     }
     .map {
         grid-column: 2;
