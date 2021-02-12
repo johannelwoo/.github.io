@@ -40,12 +40,12 @@ background: linear-gradient(to bottom, #F2D377 0%, #f2b366 100%); /* W3C, IE10+,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F2D377', endColorstr='#f2b366',GradientType=0 ); /* IE6-9 */
   }
 nav button {
-    display: block;
-    margin: 0 auto;              
+    margin: -4rem 2%;              
     background-color: transparent;   
     border: none;                    
     font-size: 1.6rem;               
-    color: #fff;                   
+    color: #fff;   
+    float: right;                
 }
 
 nav {
@@ -76,7 +76,7 @@ nav ul li.active a {
     color: black;
 }
 
-nav ul.hide {display:none;}
+nav ul.hide {display: none;}
 /*----------- MAIN --------------*/
 main {
     

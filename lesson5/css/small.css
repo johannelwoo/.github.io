@@ -17,6 +17,13 @@ body {
 }
 h1, h2 { color: #1B72BF; font-family: 'Roboto', sans-serif;}
 
+#alert {
+  display: none;
+}
+
+.weather-summary {
+  display: none;
+}
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
@@ -53,13 +60,13 @@ background: -webkit-linear-gradient(top,#F2D377 0%, #f2b366 100%); /* Chrome10-2
 background: linear-gradient(to bottom, #F2D377 0%, #f2b366 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F2D377', endColorstr='#f2b366',GradientType=0 ); /* IE6-9 */
   }
-nav button {
-    display: block;
-    margin: 0 auto;              
+  nav button {
+    margin: -4rem 2%;              
     background-color: transparent;   
     border: none;                    
     font-size: 1.6rem;               
-    color: #fff;                   
+    color: #fff;   
+    float: right;                
 }
 
 nav {
