@@ -1,0 +1,195 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+#alert {
+    text-align: center;
+  }
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+h1, h2 { color: #1B72BF; font-family: 'Roboto', sans-serif;}
+
+#alert {
+  display: none;
+}
+
+.weather-summary {
+  display: none;
+}
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #F2D377;
+    color: #1B72BF;
+    width : 100%;
+    
+}
+header img {float: left; margin-right: 10px; width: 50px;}
+header h1 {margin: 0; font-size: 1.3rem;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
+
+header section {
+    display: flex;
+    flex-flow: column;
+}
+
+/*----------- NAVIGATION --------------*/
+.ham {
+    margin-top: 20px;
+    margin-left: 45px;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    border: none;
+  }
+
+nav{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
+background:  #f2b366; /* Old browsers */
+background: -moz-linear-gradient(top, #F2D377 0%, #f2b366 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,#F2D377 0%, #f2b366 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #F2D377 0%, #f2b366 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F2D377', endColorstr='#f2b366',GradientType=0 ); /* IE6-9 */
+  }
+  nav button {
+    margin: -4rem 2%;              
+    background-color: transparent;   
+    border: none;                    
+    font-size: 1.6rem;               
+    color: #fff;   
+    float: right;                
+}
+
+nav {
+    background-color: #F2D377;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #333333;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: white;
+    color: #F2B366;
+}
+nav ul li.active a {
+    background-color: #F2B366;
+    color: black;
+}
+
+nav ul.hide {display:none;}
+
+#active {
+    background-color: white;
+    color: #F2B366;
+  }
+
+.mainNav {
+	list-style: none;
+	padding: 0;
+}
+
+.mainNav li {
+	display: none;
+}
+
+.mainNav a {
+    display: block;
+    color: #333333;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.mainNav a:hover {
+	color: white;
+	background-color: #F2B366;
+}
+
+.responsive li {
+	display: block;
+}
+
+/*----------- MAIN --------------*/
+main {
+    min-height: 10rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+main img {
+    max-width: 100%;
+}
+
+
+main {
+    margin-top: 10px !important;
+    line-height: 1.5rem;
+  }
+  
+  main h2 {
+    margin-top: 20px;
+  }
+  
+  main h3 {
+    margin-top: 20px;
+  }
+  
+  main p {
+    margin-top: 10px;
+  }
+
+/*Social media*/
+  .social-media {
+    max-width: 60px;
+    padding: 10px;
+    height: auto;
+    opacity: .7;
+}
+.map {
+    width: 300px;
+}
+.social-media:hover {
+    opacity: 1;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #F2D377;
+    padding: .5rem 2%;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
+    background:  #f2b366; /* Old browsers */
+    background: -moz-linear-gradient(top, #f2b366 0%, #F2D377 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,#f2b366 0%, #F2D377 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f2b366 0%, #F2D377 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2b366', endColorstr='#F2D377',GradientType=0 ); /* IE6-9 */
+  }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
