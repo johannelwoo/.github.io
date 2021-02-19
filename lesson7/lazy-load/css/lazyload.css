@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    height: 50px;
+    background-color: cadetblue;
+    border-top: 5px double;
+    border-bottom: 5px double;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
