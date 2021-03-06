@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<title>AcuWeather</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+     
+</head>
+
+<body>
+    <div id="alert">
+        <h3>"Saturday = Preston Pancakes in the Park!<br>
+        9:00 a.m. Saturday at the city park pavillion.</h3>
+    </div>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/weather-logo.png" alt="logo">
+    <h1>AcuWeather</h1>
+    <h2>Cloudy with a chance of accuracy</h2>
+</header>
+    
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>     
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+        <img class="hero" src="images/banner.jpg" alt="heroImage">
+        <div id="cards"></div>
+
+        <article class="articleSplit">
+            <h2 class="aTitle">News of the Day</h2>
+            <img class="aImage" src="https://picsum.photos/300/169" alt="article image">
+            <p class="articleP">
+                Sed elementum tempus egestas sed. Sit amet mattis vulputate enim nulla. 
+                In arcu cursus euismod quis viverra nibh. 
+                Platea dictumst quisque sagittis purus. 
+                Dignissim suspendisse in est ante in nibh mauris cursus. 
+                Tempor nec feugiat nisl pretium fusce id. 
+                Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. 
+                Orci sagittis eu volutpat odio facilisis mauris. 
+                Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. 
+                Quis auctor elit sed vulputate mi sit. 
+                In ante metus dictum at tempor commodo. 
+                Id aliquet risus feugiat in ante metus dictum. 
+                Vulputate enim nulla aliquet porttitor lacus luctus. 
+                Lobortis feugiat vivamus at augue eget arcu dictum varius. 
+                Odio facilisis mauris sit amet massa vitae tortor condimentum. 
+                Felis eget nunc lobortis mattis aliquam faucibus. 
+                Blandit turpis cursus in hac habitasse platea dictumst. 
+                Risus viverra adipiscing at in tellus integer feugiat.
+                <br>
+
+                Pulvinar elementum integer enim neque volutpat ac. 
+                Ipsum dolor sit amet consectetur adipiscing. 
+                Arcu felis bibendum ut tristique et. 
+                Posuere urna nec tincidunt praesent semper feugiat nibh. 
+                Nulla facilisi cras fermentum odio eu feugiat pretium nibh. 
+                Rhoncus dolor purus non enim praesent. 
+                Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. 
+                Facilisi etiam dignissim diam quis. Purus sit amet volutpat consequat. 
+                Fermentum posuere urna nec tincidunt praesent semper feugiat. 
+                Massa enim nec dui nunc mattis. 
+                Turpis massa tincidunt dui ut ornare lectus sit. 
+                Ultrices in iaculis nunc sed.
+            </p>
+        </article>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; Johanna Schick <div class="lastUpdate"><span id="currentdate"></span></div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/cards.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
