@@ -291,23 +291,26 @@ form label.top input:required:valid {
 }
 
 /*Home page css*/
-.aImage {
-  width: 100%;
-  padding-bottom: 10px;
+
+#cards img {
+  width: 300px;
 }
 
-.aTitle {
-  padding: 10px;
-}
-
-section {
-  border: 2px double white;
-  padding: 10px;
-  margin: 10px;
+#cards div {
+  color: black;
+  display: block;
+  border: white double 2px;
   background-color: #7ebfd9;
 }
 
-section h2 {
-  font-weight: bolder;
-  color: black;
+#cards {
+  text-align: center;
+}
+
+.aImage {
+  width: 100%;
+}
+
+.hero-content {
+  position: relative;
 }
