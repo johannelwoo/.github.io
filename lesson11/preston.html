@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<title>AcuWeather</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+     
+</head>
+
+<body>
+    <div id="alert">
+        <h3>"Saturday = Preston Pancakes in the Park!<br>
+        9:00 a.m. Saturday at the city park pavillion.</h3>
+    </div>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/weather-logo.png" alt="logo">
+    <h1>AcuWeather</h1>
+    <h2>Cloudy with a chance of accuracy</h2>
+</header>
+    
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>     
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+        <section class="summary">
+            <h2>Preston, Idaho</h2>
+            <div class = "image-and-summary">
+                <picture class="hero image">
+                    <source media="(max-width: 200px)" srcset="images/franklin-200.jpg">
+                    <source media="(max-width: 500px)" srcset="images/franklin-500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/franklin-800.jpg">
+                    <img src="images/franklin-1100.jpg" alt="Franklin">
+                </picture>
+                <section class ="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class = "stats"></div>
+                    <p>Currently: Cloudy</p>
+                    <p>Temperature: <span id="temp">40</span>&deg;F</p>
+                    <p>Wind Speed: <span id="speed">20</span>mph</p>
+                    <p id="chill">message</p>
+                    <p>Humidity: 95%</p>
+                    
+                </section>
+            </div>
+        </section>
+        <h2>Five Day Forecast</h2>
+        <div id="five-day"></div>
+        <div class="article">
+            <h2>Upcoming events</h2>
+            <img src="images/preston-article-image.jpg" alt="img-article">
+            <ul>
+                <li>March 22: City Council Meeting</li>
+                <li>March 24: P&Z Meeting</li>
+                <li>April 12: City Council Meeting</li>
+                <li>April 14: P&Z Meeting</li>
+                <li>April 19-22 & 26-29: Spring Clean-up</li>
+            </ul>
+            <h2>Explore the City</h2>
+            <ul>
+                <li>Come joing the community for an Easter Egg Scramble on March 31 starting at 10am at the Preston City Park.</li>
+                <li>Come enjoy the warm water at the Oneida Narrows Reservoir where you can float the narrows or travel a little farther up the road to the reservoir and go boating, fishing or swimming.</li>
+                <li>Take a relaxing trip to Maple Grove Hot Springs which provides a natural hot spring therapy pools, gift ship and even camping by the Oneida Narrows Reservoir.</li>
+                <li>In the winter we have the perfect snow to enjoy snowmobiling and cross county skiing.</li>
+                <li>If you love golf, come to our 18-hole course which is open to the public everyday with affordable rates.</li>
+            </ul>
+        
+        <h2>Contact info</h2>
+
+        <div class="contact-info">
+            <div class="contact">
+                <p>
+                <br>    
+                <b>Phone Number</b>
+                <br>
+                123-456-7890
+            </p>
+            <p>
+                <br>
+                <b>Email</b>
+                <br>
+                acuweather@gmail.com
+            </p>
+            <p>
+                <br>
+                <b>Address</b>
+                <br>
+                123 Potato Lane Preston, Idaho 83263
+            </p>
+
+            <a href = "http://www.facebook.com/" target = "_blank">
+                <img class = "social-media" src = "images/facebook.png" alt="Facebook">
+            </a>
+            <a href = "http://www.instagram.com/" target = "_blank">
+                <img class = "social-media" src = "images/instagram.jpg" alt="Instagram">
+            </a>
+            <a href = "http://twitter.com/" target = "_blank">
+                <img class = "social-media" src = "images/twitter.png" alt="Twitter">
+            </a>
+        
+            </div>
+            <div class="preston-map">
+        <img class="map" src="images/map.jpg" alt="map">
+            </div>
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; Johanna Schick <div class="lastUpdate"><span id="currentdate"></span></div>
+</footer>
+<script src="js/forecast.js"></script>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

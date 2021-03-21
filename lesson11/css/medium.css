@@ -1,0 +1,84 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    
+    /*----------- HEADER --------------*/
+    header img{width: 75px;}
+    header h1{font-size: 2rem;}
+    header h2{font-size: 1.5rem;}
+    
+    
+    
+    /*----------- NAVIGATION --------------*/
+  
+    
+    
+    /*----------- MAIN --------------*/
+
+  
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20%
+    }
+  
+    .contact {
+        grid-column: 1;
+    }
+    .map {
+        grid-column: 2;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .article img {
+        float: right;
+        margin-bottom: 20px;
+      }
+      
+    .article p {
+    display: inline;
+    }
+
+    /*Gallery css*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery figure {
+        margin: 10px;
+    }
+
+    .galler figcaption {
+        padding: 15px;
+        margin-top: -4px;
+    }
+ 
+    /*Home Page CSS*/
+    div#cards div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    div#cards div:nth-child(odd) picture {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    div#cards div:nth-child(odd) section {
+        grid-column: 1;
+    }
+
+    /*Five Day Forecast*/
+    #five-day {
+        display: block;
+    }
+
+    /*----------- FOOTER --------------*/
+        
+    } /* end of media query */

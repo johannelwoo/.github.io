@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<title>AcuWeather</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+     
+</head>
+
+<body>
+    <div id="alert">
+        <h3>"Saturday = Preston Pancakes in the Park!<br>
+        9:00 a.m. Saturday at the city park pavillion.</h3>
+    </div>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/weather-logo.png" alt="logo">
+    <h1>AcuWeather</h1>
+    <h2>Cloudy with a chance of accuracy</h2>
+</header>
+    
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>     
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+        <section class="summary">
+            <h2>Fish Haven, Idaho</h2>
+            <div class = "image-and-summary">
+                <picture class="hero image">
+                    <source media="(max-width: 200px)" srcset="images/franklin-200.jpg">
+                    <source media="(max-width: 500px)" srcset="images/franklin-500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/franklin-800.jpg">
+                    <img src="images/franklin-1100.jpg" alt="Franklin">
+                </picture>
+                <section class ="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class = "stats"></div>
+                    <p>Currently: Cloudy</p>
+                    <p>Temperature: <span id="temp">40</span>&deg;F</p>
+                    <p>Wind Speed: <span id="speed">20</span>mph</p>
+                    <p id="chill">message</p>
+                    <p>Humidity: 95%</p>
+                    
+                </section>
+            </div>
+        </section>
+        <h2>Five Day Forecast</h2>
+        <div id="five-day"></div>
+        <div class="article">
+            <h2>Upcoming events</h2>
+            <img src="images/preston-article-image.jpg" alt="img-article">
+            <ul>
+                <li>June 10: Bear Lake Marathon Trifecta</li>
+                <li>June 12: Idaho & Utah Free Fishing Day</li>
+                <li>June 19: Woodruff Classic Carshow</li>
+                <li>June 26: Cody's Car Show</li>
+                <li>August 5: Bear Lake Raspberry Days 2021</li>
+            </ul>
+            <h2>Explore the City</h2>
+            <ul>
+                <li>Come enjoy the Bear Lake West Golf Course. It is a 9-hole course with carts and club rentals, lessons, resturaunt and a loung that overlooks Bear Lake.</li>
+                <li>Travel to Fish Haven Canyon Trail Head for snowmobiling, ATV riding and mountain biking.</li>
+                <li>Put your biking skills to the test by biking the Trail around Bear Lake - Road Bike Route. It is a 52 mile loop that is mostly level.</li>
+                <li>Come visit Bear Lake for boating, jet skiing, paddle boarding, kyaking, swimming, fishing and ice fishing in the winter.</li>
+            </ul>
+        <h2>Contact info</h2>
+
+        <div class="contact-info">
+            <div class="contact">
+                <p>
+                <br>    
+                <b>Phone Number</b>
+                <br>
+                123-456-7890
+            </p>
+            <p>
+                <br>
+                <b>Email</b>
+                <br>
+                acuweather@gmail.com
+            </p>
+            <p>
+                <br>
+                <b>Address</b>
+                <br>
+                123 Potato Lane Preston, Idaho 83263
+            </p>
+
+            <a href = "http://www.facebook.com/" target = "_blank">
+                <img class = "social-media" src = "images/facebook.png" alt="Facebook">
+            </a>
+            <a href = "http://www.instagram.com/" target = "_blank">
+                <img class = "social-media" src = "images/instagram.jpg" alt="Instagram">
+            </a>
+            <a href = "http://twitter.com/" target = "_blank">
+                <img class = "social-media" src = "images/twitter.png" alt="Twitter">
+            </a>
+        
+            </div>
+            <div class="preston-map">
+        <img class="map" src="images/fish-haven-map.jpg" alt="map">
+            </div>
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; Johanna Schick <div class="lastUpdate"><span id="currentdate"></span></div>
+</footer>
+<script src="js/fish-haven-api.js"></script>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

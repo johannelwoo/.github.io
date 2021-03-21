@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<title>AcuWeather</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png">
+     
+</head>
+
+<body>
+    <div id="alert">
+        <h3>"Saturday = Preston Pancakes in the Park!<br>
+        9:00 a.m. Saturday at the city park pavillion.</h3>
+    </div>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/weather-logo.png" alt="logo">
+    <h1>AcuWeather</h1>
+    <h2>Cloudy with a chance of accuracy</h2>
+</header>
+    
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>     
+        </ul>
+    </nav>
+
+<!-- CONTENT HERE -->
+<main>
+    <h2 class="subheadings">Weather Gallery</h2>
+    <div class="gallery">
+        <figure>
+            <img src='images/cloudy-fields.jpg' data-src='images/cloudy-fields.jpg' alt='an image'>
+            <figcaption>Dark clouds over a lake</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/cloudy-mountains.jpg' alt='an image'>
+            <figcaption>Sunny sky over a field</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/fog-forest.jpg' alt='an image'>
+            <figcaption>Fog over a forest</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/lightning-storm.jpg' alt='an image'>
+            <figcaption>Frozen lake</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/rain-storm-field.jpg' alt='an image'>
+            <figcaption>Lightning striking in a field</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/rainbow-field.jpg' alt='an image'>
+            <figcaption>Partly cloudy sky</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/snowy-city.jpg' alt='an image'>
+            <figcaption>A rainy day in the city</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/snowy-farm.jpg' alt='an image'>
+            <figcaption>The begining of autumn</figcaption>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/sunrise.jpg' alt='an image'>
+            <figcaption>Sunny day at a farm</figcaption>
+        </figure>
+    </div>
+</main>
+
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; Johanna Schick <div class="lastUpdate"><span id="currentdate"></span></div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/lazy-load.js"></script>
+<script src="js/web-frontload.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

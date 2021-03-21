@@ -1,0 +1,98 @@
+@media only screen and (min-width: 64rem) {
+
+  /*----------- NAVIGATION --------------*/
+  /* display nav normally for large screens */
+  nav ul, nav ul.hide {margin-left: 1rem; display: flex;}
+  /* added .hide class to fix error with hidden nav when menu is collapsed */
+  nav ul li { flex: 1 1 100%;}
+  nav ul li a {
+      padding: .5rem 1rem;
+      font-size: 1.0rem;
+      }
+
+  nav button {
+      display: none;   
+  }
+
+  .mainNav {
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+  }
+  .mainNav li{
+    display: block;
+    flex: 1 1 auto;
+  }
+  .mainNav a {
+      text-align: center;
+  }
+  .ham {
+      display: none;
+  }
+  /*HEADER*/
+  
+  /* ------------MAIN------------- */
+
+main{
+      max-width: 64rem;
+      margin: 0 auto;
+  }
+  
+  .weather-summary {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background-color: whitesmoke;
+    opacity: .75;
+    border-style: double;
+    border-color: black;
+    width: 200px;
+    height: auto;
+    margin-top: -400px;
+    margin-left: 50px;
+}
+.summary-image {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+}
+
+/*Gallery css*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Form css*/
+form label.sbs {
+    padding: .4rem 0;
+}
+
+.gallery figure:hover {
+    box-shadow: 0 0 70px #3A3B3C;
+}
+
+}
+/*Home Page css*/
+div#cards div{
+    display: block;
+    margin: .75rem 2% 0 2%;
+}
+
+div#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Five Day Forecast*/
+#five-day table {
+    width: 550px;
+}
+
+#five-day img {
+    width: 60px;
+}
+
+/* end of media query */
