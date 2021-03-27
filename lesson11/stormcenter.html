@@ -68,16 +68,45 @@
         <fieldset>
             <legend>Storm Information</legend>
             <label class='top'>Storm Date <input type="date" name="date"></label>
-            <label class='top'>Storm Type
-                <select name="datalist">
-                    <option value=''>Please Select &#9662;</option>
-                    <option value='flood'>Flash Flood</option>
-                    <option value='hail'>Hail</option>
-                    <option value='hurricane'>Hurricane</option>
-                    <option value='thunderstorm'>Thunderstorm</option>
-                    <option value='tornado'>Tornado</option>
-                </select>
-            </label>
+            <div class="formdiv">
+              Storm Attributes<em>(select all that apply</em>
+              <label class="sbs" for="ff"
+                ><input type="checkbox" id="ff" name="ff" value="yes" />Flash
+                Flood</label
+              >
+              <label class="sbs" for="hail"
+                ><input
+                  type="checkbox"
+                  name="hail"
+                  id="hail"
+                  value="yes"
+                />Hail</label
+              >
+              <label class="sbs" for="hur"
+                ><input
+                  type="checkbox"
+                  name="hur"
+                  id="hur"
+                  value="yes"
+                />Hurricane</label
+              >
+              <label class="sbs" for="tstorm"
+                ><input
+                  type="checkbox"
+                  name="tstorm"
+                  id="tstorm"
+                  value="yes"
+                />Thunderstorm</label
+              >
+              <label class="sbs" for="tor"
+                ><input
+                  type="checkbox"
+                  name="tor"
+                  id="tor"
+                  value="yes"
+                />Tornado</label
+              >
+            </div>
             <label class="severity">Storm Severity: &nbsp;&nbsp;&nbsp;
                 <input type="range" id="rating" value="5" min="1" max="10" step="1"
                 oninput="updateseverity(this.value)" onchange="updateseverity(this.value)">
@@ -101,7 +130,7 @@
 
         <fieldset>
             <legend>Additional Storm Information</legend>
-            <textarea name="info" placeholder="Enter additional information here..." rows="10" cols="50"></textarea>
+            <label class='additional'><textarea name="info" placeholder="Enter additional information here..." rows="10" cols="50"></textarea></label>
         </fieldset>
 
         <input class="submitBtn" type="submit" value="Report Storm">
