@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<title>Richmond Chamber of Commerce</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/richmond-logo.jpg">
+
+     
+</head>
+
+<body>
+    
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/logo.jpg" alt="logo">
+    <h1>Richmond Chamber of Commerce</h1>
+    <h2>Est. 1859</h2>
+</header>
+    
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="richmond.html">Richmond</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>      
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+    <h2>Join the Richmond Chamber of Commerce</h2>
+    <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Member Information</legend>
+            <label class="top">First Name*<input type="text" name="fname" placeholder="Jane" required></label>
+            <label class="top">Last Name*<input type="text" name="lname" placeholder="Doe" required></label>
+            <label class="top">Title<input type="text" name="title" placeholder="Title"></label>
+            <label class='top'>Email* <input type="email" name="email" placeholder="info@example.com" required></label>
+            <label class='top'>Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Address</legend>
+            <label class='top'>Address line 1* <input type="text" name="address1" placeholder="123 Example Street" required></label>
+            <label class='top'>Address line 2 <input type="text" name="address2" placeholder="Suite 900" required></label>
+            <label class='top'>Country* <input type="text" name="country" placeholder="United States" required></label>
+            <label class='top'>City* <input type="text" name="city" placeholder="Richmond"></label>
+            <label class='top'>State* <input type="text" name="state" placeholder="Utah" required></label>
+            <label class='top'>Postal Code* <input type="number" name="postalcode" placeholder="84333" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label class='top'>Website<input type="text" name="website" placeholder="www.example.com" ></label>
+
+            <label class='additional'>Business Description<br><textarea name="description" placeholder="Enter business description here..." rows="10" cols="50"></textarea></label>
+
+            <label class='top'>Storm Region
+                <select name="datalist">
+                    <option value=''>Select Membership &#9662;</option>
+                    <option value='non-profit'>Non-profit ($100)</option>
+                    <option value='bronze'>Bronze ($200)</option>
+                    <option value='silver'>Silver ($400)</option>
+                    <option value='gold'>Gold ($1000)</option>
+                </select>
+            </label>
+        
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="Submit">
+        </form>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; Johanna Schick <div class="lastUpdate"><span id="currentdate"></span></div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/cards.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

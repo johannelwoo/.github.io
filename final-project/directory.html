@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Website Planning Document">
+<meta name="author" content="Johanna Schick">
+
+<title>Richmond Chamber of Commerce</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/richmond-logo.jpg">
+
+     
+</head>
+
+<body>
+    <div id="alert">
+        <h3>"Saturday = Preston Pancakes in the Park!<br>
+        9:00 a.m. Saturday at the city park pavillion.</h3>
+    </div>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    
+	<img src="images/logo.jpg" alt="logo">
+    <h1>Richmond Chamber of Commerce</h1>
+    <h2>Est. 1859</h2>
+</header>
+    
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="richmond.html">Richmond</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>    
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+        <div id="btnContainer">
+        <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+        <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+        </div>
+        <br>
+
+        <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2><a href="https://www.cachevalleycabinetsandtops.com/">Cache Valley Cabinets & Tops</a></h2>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2><a href="https://www.pepperidgefarm.com/">Pepperidge Farm</a></h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+    <h2><a href="http://www.cachevalleyextermination.com/">Cache Valley Extermination</a></h2>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Utah State Liquor Agency</h2>
+</div>
+
+</div>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; Johanna Schick <div class="lastUpdate"><span id="currentdate"></span></div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/cards.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="list-grid.js"></script>
+</body>
+</html>
