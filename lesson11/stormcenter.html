@@ -68,45 +68,17 @@
         <fieldset>
             <legend>Storm Information</legend>
             <label class='top'>Storm Date <input type="date" name="date"></label>
-            <div class="formdiv">
-              Storm Attributes<em>(select all that apply</em>
-              <label class="sbs" for="ff"
-                ><input type="checkbox" id="ff" name="ff" value="yes" />Flash
-                Flood</label
-              >
-              <label class="sbs" for="hail"
-                ><input
-                  type="checkbox"
-                  name="hail"
-                  id="hail"
-                  value="yes"
-                />Hail</label
-              >
-              <label class="sbs" for="hur"
-                ><input
-                  type="checkbox"
-                  name="hur"
-                  id="hur"
-                  value="yes"
-                />Hurricane</label
-              >
-              <label class="sbs" for="tstorm"
-                ><input
-                  type="checkbox"
-                  name="tstorm"
-                  id="tstorm"
-                  value="yes"
-                />Thunderstorm</label
-              >
-              <label class="sbs" for="tor"
-                ><input
-                  type="checkbox"
-                  name="tor"
-                  id="tor"
-                  value="yes"
-                />Tornado</label
-              >
-            </div>
+            <br>
+            <label class="ftop">Storm Type <input name="storm" list="stormtype">
+                <datalist id="stormtype">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricance"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </label>
+            <br><br>
             <label class="severity">Storm Severity: &nbsp;&nbsp;&nbsp;
                 <input type="range" id="rating" value="5" min="1" max="10" step="1"
                 oninput="updateseverity(this.value)" onchange="updateseverity(this.value)">

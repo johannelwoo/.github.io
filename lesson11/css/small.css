@@ -364,4 +364,28 @@ div#cards p {
   width: 45px;
 }
 
+
+
+
+
+
+.upcoming {
+  border: 2px solid #1B72BF; 
+  width: 80%;
+  background-color:#F2D377;
+  margin: 6% auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.upcoming h3 {
+  border-bottom: 2px solid #1B72BF;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 0;
+}
+.upcoming p {
+  text-align: center;
+  font-size: 1.2em;
+}
 /*Calandar Css*/
